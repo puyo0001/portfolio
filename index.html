@@ -12,8 +12,211 @@
       rel="stylesheet"
     />
     <!-- Bootstrap -->
-    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Bootstrap Navigation bar -->
+    <header class="container">
+      <!-- Skip links -->
+      <ul class="skip-links">
+        <li>
+          <a href="#navigation" aria-label="Skip to main navigation"
+            >Skip to main navigation</a
+          >
+        </li>
+        <li>
+          <a href="#featured" aria-label="Skip to featured project"
+            >Skip to main content</a
+          >
+        </li>
+        <li>
+          <a href="#blog" aria-label="Skip to blog section"
+            >Skip to contact section</a
+          >
+        </li>
+        <li>
+          <a href="#contact" aria-label="Skip to contact section"
+            >Skip to address section</a
+          >
+        </li>
+      </ul>
+
+      <nav id="navigation" class="navbar navbar-expand-lg">
+        <div class="container-lg">
+          <a class="navbar-brand" href="home">
+            <img id="logo" src="images/logo.svg" alt="MJ Puyol Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Portfolio">Portfolio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="About">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Blog">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="Contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.behance.com"
+                  ><i class="bi bi-behance"></i
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- End Bootstrap  Navigation bar -->
+    <main>
+      <!-- Hero section -->
+      <section id="hero">
+        <div class="container block">
+          <h1>Let's create something amazing!</h1>
+          <div><a class="mj-button" href="#">Portfolio</a></div>
+        </div>
+      </section>
+      <!-- End hero section -->
+      <!-- Featured Project -->
+      <section>
+        <div class="container">
+          <h2>Featured projects</h2>
+          <h3>Pausa Design</h3>
+        </div>
+        <div id="featured"></div>
+      </section>
+      <!-- End Featured Project -->
+      <!-- Blog -->
+      <div id="blog" class="container">
+        <h2>Blog</h2>
+
+        <div class="blog-grid">
+          <!-- Blog article -->
+          <article>
+            <img src="images/blog01.png" alt="blog1" />
+
+            <div class="text-block">
+              <h4>Blog Entry 1</h4>
+
+              <p>
+                Vivamus accumsan auctor placerat. Praesent nec nisi enim.
+                Suspendisse justo tellus, viverra consectetur libero sed,
+                scelerisque <a href="#">Read More</a>
+              </p>
+            </div>
+          </article>
+          <!-- End Blog Article -->
+          <!-- Blog article -->
+          <article>
+            <img src="images/blog02.png" alt="blog1" />
+
+            <div class="text-block">
+              <h4>Blog Entry 2</h4>
+
+              <p>
+                Vivamus accumsan auctor placerat. Praesent nec nisi enim.
+                Suspendisse justo tellus, viverra consectetur libero sed,
+                scelerisque <a href="#">Read More</a>
+              </p>
+            </div>
+          </article>
+          <!-- End Blog Article -->
+          <!-- Blog article -->
+          <article>
+            <img src="images/blog03.png" alt="blog1" />
+
+            <div class="text-block">
+              <a href="blog.html"><h4>Blog Entry 3</h4></a>
+
+              <p>
+                Vivamus accumsan auctor placerat. Praesent nec nisi enim.
+                Suspendisse justo tellus, viverra consectetur libero sed,
+                scelerisque <a href="#">Read More</a>
+              </p>
+            </div>
+          </article>
+          <!-- End Blog Article -->
+        </div>
+      </div>
+      <!-- End Blog -->
+      <!-- Contact form -->
+      <section id="contact" class="contact-bg">
+        <div class="container-contact">
+          <h2>Contact</h2>
+          <form action="#" method="get">
+            <div>
+              <label for="firstname">Full Name</label>
+              <input id="firstname" name="fname" type="text" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div>
+              <label for="comment">Message</label>
+              <textarea name="comment" id="comment"></textarea>
+            </div>
+            <div>
+              <button class="mj-button" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!-- End Contact form -->
+    </main>
+    <footer>
+      <div>© 2023 MJPuyol. All Rights Reserved.</div>
+    </footer>
+    <!-- Bootstrap Java Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

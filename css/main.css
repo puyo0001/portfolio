@@ -181,8 +181,8 @@ article .text-block a:focus {
 /* Contact form */
 
 #contact {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .container-contact {

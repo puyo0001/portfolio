@@ -37,15 +37,25 @@
           >
         </li>
         <li>
-          <a href="#main" aria-label="Skip to main content"
+          <a href="#featured" aria-label="Skip to featured project"
             >Skip to main content</a
+          >
+        </li>
+        <li>
+          <a href="#blog" aria-label="Skip to blog section"
+            >Skip to contact section</a
+          >
+        </li>
+        <li>
+          <a href="#contact" aria-label="Skip to contact section"
+            >Skip to address section</a
           >
         </li>
       </ul>
 
       <nav id="navigation" class="navbar navbar-expand-lg">
         <div class="container-lg">
-          <a class="navbar-brand" href="index.html">
+          <a class="navbar-brand" href="home">
             <img id="logo" src="images/logo.svg" alt="MJ Puyol Logo" />
           </a>
           <button
@@ -60,15 +70,14 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0 justify-content-between w-100">
               <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link active" href="index.html" aria-label="home"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  href="portfolio.html"
-                  aria-label="portfolio"
+                <a class="nav-link" href="portfolio.html" aria-label="portfolio"
                   >Portfolio</a
                 >
               </li>
@@ -88,6 +97,8 @@
                   >Contact</a
                 >
               </li>
+            </ul>
+            <ul class="d-flex list-unstyled m-0 justify-content-center">
               <li class="nav-item">
                 <a
                   class="nav-link"
@@ -122,6 +133,7 @@
       </nav>
     </header>
     <!-- End Bootstrap  Navigation bar -->
+
     <main id="main">
       <!-- portfolio grid -->
       <div class="portfolio-grid">

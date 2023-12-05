@@ -61,18 +61,18 @@ img {
 h1 {
   font-size: 2.5rem;
   font-family: "Playfair";
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h2 {
   font-size: 1.7rem;
   font-family: "Playfair";
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h3,
 h4 {
-  font-weight: 700;
+  font-weight: 900;
 }
 
 h1,
@@ -180,11 +180,6 @@ article .text-block a:focus {
 
 /* Contact form */
 
-#contact {
-  /* display: flex;
-  flex-direction: column; */
-}
-
 .container-contact {
   max-width: 80%;
   margin: 0 auto;
@@ -245,6 +240,15 @@ textarea {
     var(--yellow) 0%,
     var(--hot-pink) 100%
   );
+}
+
+/* about and contact page grid */
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  /* grid-gap: 1rem; */
+  margin: 0 auto;
 }
 
 /* portfolio elements */
@@ -316,12 +320,14 @@ footer {
     text-align: left;
   }
 
-  /* navigation bar */
-
-  /* hero section */
-
   /* blog */
   .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* about and contact page grid */
+
+  .content-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 

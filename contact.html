@@ -37,8 +37,8 @@
           >
         </li>
         <li>
-          <a href="#about" aria-label="Skip to about information"
-            >Skip to about information</a
+          <a href="#contact" aria-label="Skip to contact section"
+            >Skip to contact section</a
           >
         </li>
       </ul>
@@ -71,7 +71,7 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link active" href="about.html" aria-label="about"
+                <a class="nav-link" href="about.html" aria-label="about"
                   >About</a
                 >
               </li>
@@ -81,7 +81,10 @@
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="contact.html" aria-label="contact"
+                <a
+                  class="nav-link active"
+                  href="contact.html"
+                  aria-label="contact"
                   >Contact</a
                 >
               </li>
@@ -121,36 +124,40 @@
       </nav>
     </header>
     <!-- End Bootstrap  Navigation bar -->
-    <main id="about">
+    <main>
       <section class="content-grid">
         <div>
           <img
             itemprop="image"
-            src="/images/about.png"
+            src="/images/contact.png"
             srcset="
-              /images/about-500_x_500.png   500w,
-              images/about-1000_x_1000.png 1000w
+              /images/contact-500_x_500.png   500w,
+              images/contact-1000_x_1000.png 1000w
             "
             sizes="(max-width: 500px) 500px, 1000px"
             alt="About María José Puyol"
           />
         </div>
-        <div id="about" class="d-flex p-4 flex-column mt-4">
-          <h1>About</h1>
-          <p>
-            María José Puyol is a Chilean entrepreneur, graphic designer, and
-            illustrator deeply passionate about visual communication and art.
-            With a bachelor’s degree in Design, she has honed her skills in
-            Illustration, creating innovative graphics and compelling visuals.
-          </p>
-          <p>
-            Currently based in Ottawa, Canada, María José is dedicating to
-            enrich her expertise in Graphic Design and Web Development. She
-            actively contributes her creativity and dedication to various
-            volunteer and freelance projects, reflecting her proactive approach
-            and commitment to excellence.
-          </p>
-          <a class="mj-button align-self-end" href="contact.html">Contact</a>
+        <div class="d-flex p-4 flex-column contact-bg">
+          <h1>Contact</h1>
+          <p></p>
+          <form action="#" method="get">
+            <div>
+              <label for="firstname">Full Name</label>
+              <input id="firstname" name="fname" type="text" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div>
+              <label for="comment">Message</label>
+              <textarea name="comment" id="comment"></textarea>
+            </div>
+            <button class="mj-button border-0 align-self-end" type="submit">
+              Send
+            </button>
+          </form>
         </div>
       </section>
     </main>

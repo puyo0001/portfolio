@@ -26,24 +26,25 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
+
   <body class="bg-light">
     <!-- Bootstrap Navigation bar -->
     <header class="container">
       <!-- Skip links -->
       <ul class="skip-links">
         <li>
-          <a href="#navigation" aria-label="Skip to main navigation"
+          <a href="#menu" aria-label="Skip to main navigation"
             >Skip to main navigation</a
           >
         </li>
         <li>
-          <a href="#contact" aria-label="Skip to contact section"
+          <a href="#contact-section" aria-label="Skip to contact section"
             >Skip to contact section</a
           >
         </li>
       </ul>
 
-      <nav id="navigation" class="navbar navbar-expand-lg">
+      <nav id="menu" class="navbar navbar-expand-lg">
         <div class="container-lg">
           <a class="navbar-brand" href="index.html">
             <img id="logo" src="images/logo.svg" alt="MJ Puyol Logo" />
@@ -141,7 +142,7 @@
             <img src="images/contact.png" alt="About" />
           </picture>
         </div>
-        <div class="col-md-6 col-sm-12 p-4 contact-bg">
+        <div id="contact-section" class="col-md-6 col-sm-12 p-4 contact-bg">
           <h1>Let's connect!</h1>
           <form action="#" method="get">
             <div>
@@ -160,46 +161,9 @@
               <button class="mj-button border-0" type="submit">Send</button>
             </div>
           </form>
-
         </div>
+      </div>
     </main>
-    <!-- <main>
-      <section class="content-grid">
-        <div>
-          <img
-            itemprop="image"
-            src="/images/contact.png"
-            srcset="
-              /images/contact-500_x_500.png   500w,
-              images/contact-1000_x_1000.png 1000w
-            "
-            sizes="(max-width: 500px) 500px, 1000px"
-            alt="Contact Image"
-          />
-        </div>
-        <div class="d-flex p-4 flex-column contact-bg">
-          <h1>Let's connect</h1>
-          <p></p>
-          <form action="#" method="get">
-            <div>
-              <label for="firstname">Full Name</label>
-              <input id="firstname" name="fname" type="text" />
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" />
-            </div>
-            <div>
-              <label for="comment">Message</label>
-              <textarea name="comment" id="comment"></textarea>
-            </div>
-            <button class="mj-button border-0 align-self-end" type="submit">
-              Send
-            </button>
-          </form>
-        </div>
-      </section>
-    </main> -->
     <footer>
       <div>© 2023 MJPuyol. All Rights Reserved.</div>
     </footer>

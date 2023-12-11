@@ -2,15 +2,17 @@
 
 ## Project Description
 
-Welcome to my portfolio bla bla bla bla bla
+Welcome to my Web Portafolio for the Web Development II class on Algonquin College.
 
 ## Challenges
 
-Too many images, image optimization
+My main challenge was incorporating Bootstrap, modifying the colours without relying heavily on CSS, and optimizing many images in the portfolio.
 
 ## Lessons Learned
 
-I learned to solve problems on Github
+- I learnt how to use Bootstrap to make grids, and it facilitated the overall responsivness of the site, also I had to do a lot trouble shooting to make everything looks as I wanted.
+
+- Incorporating Animate.css to animate my logo in a quick efective way.
 
 ## Frameworks and Libraries
 

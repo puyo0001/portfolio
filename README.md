@@ -14,9 +14,12 @@ I learned to solve problems on Github
 
 ## Frameworks and Libraries
 
-- [Bootstrap] (link to bootstrap)
-- [GoogleFonts] (link)
+- [Bootstrap] https://getbootstrap.com/
+- [Bootstrap-Icons] https://icons.getbootstrap.com/
+- [GoogleFonts] https://fonts.google.com/
+- [Animate.css] https://animate.style/
 
 # External Resources
 
-- [RobotoGoogleFont] (Link)
+- [Montserrat_Font] (Link)
+- [Playfair_Font] (Link)

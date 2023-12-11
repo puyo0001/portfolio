@@ -334,12 +334,6 @@ footer {
   textarea {
     height: 10rem;
   }
-
-  /* portfolio elements */
-
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media screen and (min-width: 992px) {

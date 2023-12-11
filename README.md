@@ -16,12 +16,12 @@ My main challenge was incorporating Bootstrap, modifying the colours without rel
 
 ## Frameworks and Libraries
 
-- [Bootstrap] https://getbootstrap.com/
-- [Bootstrap-Icons] https://icons.getbootstrap.com/
-- [GoogleFonts] https://fonts.google.com/
-- [Animate.css] https://animate.style/
+- [Bootstrap](https://getbootstrap.com/)
+- [Bootstrap-Icons](https://icons.getbootstrap.com/)
+- [GoogleFonts](https://fonts.google.com/)
+- [Animate.css](https://animate.style/)
 
 ## External Resources
 
-- [Montserrat_Font] (Link)
-- [Playfair_Font] (Link)
+- [Montserrat_Font](https://fonts.google.com/specimen/Montserrat)
+- [Playfair_Font](https://fonts.google.com/specimen/Playfair)

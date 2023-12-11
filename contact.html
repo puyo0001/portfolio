@@ -26,7 +26,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
+  <body class="bg-light">
     <!-- Bootstrap Navigation bar -->
     <header class="container">
       <!-- Skip links -->
@@ -124,7 +124,46 @@
       </nav>
     </header>
     <!-- End Bootstrap  Navigation bar -->
+
     <main>
+      <div class="row">
+        <div class="col-md-6 col-sm-12 p-0 m-0">
+          <picture>
+            <source
+              srcset="images/contact-1000_x_1000.png"
+              media="(min-width: 768px)"
+            />
+
+            <source
+              srcset="/images/contact-500_x_500.png"
+              media="(max-width: 300px)"
+            />
+            <img src="images/contact.png" alt="About" />
+          </picture>
+        </div>
+        <div class="col-md-6 col-sm-12 p-4 contact-bg">
+          <h1>Let's connect!</h1>
+          <form action="#" method="get">
+            <div>
+              <label for="firstname">Full Name</label>
+              <input id="firstname" name="fname" type="text" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div>
+              <label for="comment">Message</label>
+              <textarea name="comment" id="comment"></textarea>
+            </div>
+            <div class="d-flex flex-row-reverse">
+              <button class="mj-button border-0" type="submit">Send</button>
+            </div>
+          </form>
+
+        </div>
+    </main>
+    <!-- <main>
       <section class="content-grid">
         <div>
           <img
@@ -135,11 +174,11 @@
               images/contact-1000_x_1000.png 1000w
             "
             sizes="(max-width: 500px) 500px, 1000px"
-            alt="About María José Puyol"
+            alt="Contact Image"
           />
         </div>
         <div class="d-flex p-4 flex-column contact-bg">
-          <h1>Contact</h1>
+          <h1>Let's connect</h1>
           <p></p>
           <form action="#" method="get">
             <div>
@@ -160,7 +199,7 @@
           </form>
         </div>
       </section>
-    </main>
+    </main> -->
     <footer>
       <div>© 2023 MJPuyol. All Rights Reserved.</div>
     </footer>

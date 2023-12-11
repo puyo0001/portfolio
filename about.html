@@ -26,7 +26,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
+  <body class="bg-light">
     <!-- Bootstrap Navigation bar -->
     <header class="container">
       <!-- Skip links -->
@@ -122,21 +122,23 @@
     </header>
     <!-- End Bootstrap  Navigation bar -->
     <main id="about">
-      <section class="content-grid">
-        <div>
-          <img
-            itemprop="image"
-            src="/images/about.png"
-            srcset="
-              /images/about-500_x_500.png   500w,
-              images/about-1000_x_1000.png 1000w
-            "
-            sizes="(max-width: 500px) 500px, 1000px"
-            alt="About María José Puyol"
-          />
+      <div class="row">
+        <div class="col-md-6 col-sm-12 p-0 m-0">
+          <picture>
+            <source
+              srcset="images/about-1000_x_1000.png"
+              media="(min-width: 768px)"
+            />
+
+            <source
+              srcset="/images/about-500_x_500.png"
+              media="(max-width: 300px)"
+            />
+            <img src="images/about.png" alt="About" />
+          </picture>
         </div>
-        <div id="about" class="d-flex p-4 flex-column mt-4">
-          <h1>About</h1>
+        <div class="col-md-6 col-sm-12 p-4">
+          <h1 class="pt-4">About</h1>
           <p>
             María José Puyol is a Chilean entrepreneur, graphic designer, and
             illustrator deeply passionate about visual communication and art.
@@ -150,9 +152,11 @@
             volunteer and freelance projects, reflecting her proactive approach
             and commitment to excellence.
           </p>
-          <a class="mj-button align-self-end" href="contact.html">Contact</a>
+          <div class="d-flex flex-row-reverse">
+            <a class="mj-button" href="contact.html">Contact</a>
+          </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer>
       <div>© 2023 MJPuyol. All Rights Reserved.</div>

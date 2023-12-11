@@ -26,7 +26,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/main.css" />
   </head>
-  <body>
+  <body class="bg-light">
     <!-- Bootstrap Navigation bar -->
     <header class="container">
       <!-- Skip links -->
@@ -138,7 +138,9 @@
       <section id="hero">
         <div class="container block">
           <h1>Let's create something amazing!</h1>
-          <div><a class="mj-button" href="#">Portfolio</a></div>
+          <div class="d-flex flex-row-reverse">
+            <a class="mj-button" href="contact.html">Contact</a>
+          </div>
         </div>
       </section>
       <!-- End hero section -->
@@ -146,64 +148,100 @@
       <section>
         <div class="container">
           <h2>Featured projects</h2>
-          <h3>Pausa Design</h3>
+          <a href="portfolio.html"><h3>Pausa Design</h3></a>
         </div>
         <div id="featured"></div>
       </section>
       <!-- End Featured Project -->
-      <!-- Blog -->
-      <div id="blog" class="container">
+
+      <!-- boostrap blog -->
+
+      <div class="container">
         <h2>Blog</h2>
+        <div class="row pt-4 pb-4">
+          <!-- card  -->
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-4">
+            <article>
+              <picture>
+                <source srcset="images/blog01.png" media="(min-width: 768px)" />
 
-        <div class="blog-grid">
-          <!-- Blog article -->
-          <article>
-            <img src="images/blog01.png" alt="blog1" />
+                <source
+                  srcset="images/blog01-640.png"
+                  media="(min-width: 300px)"
+                />
 
-            <div class="text-block">
-              <h4>Blog Entry 1</h4>
+                <img src="images/blog01.png" alt="Watercolour" />
+              </picture>
 
-              <p>
-                Vivamus accumsan auctor placerat. Praesent nec nisi enim.
-                Suspendisse justo tellus, viverra consectetur libero sed,
-                scelerisque <a href="#">Read More</a>
-              </p>
-            </div>
-          </article>
-          <!-- End Blog Article -->
-          <!-- Blog article -->
-          <article>
-            <img src="images/blog02.png" alt="blog1" />
+              <div class="text-block">
+                <a href="blog.html"><h4>New Watercolours Set</h4></a>
 
-            <div class="text-block">
-              <h4>Blog Entry 2</h4>
+                <p>
+                  Vivamus accumsan auctor placerat. Praesent nec nisi enim.
+                  Suspendisse justo tellus, viverra consectetur libero sed,
+                  scelerisque... <a href="blog.html">Read More</a>
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- end card -->
+          <!-- card  -->
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-4">
+            <article>
+              <picture>
+                <source srcset="images/blog02.png" media="(min-width: 768px)" />
 
-              <p>
-                Vivamus accumsan auctor placerat. Praesent nec nisi enim.
-                Suspendisse justo tellus, viverra consectetur libero sed,
-                scelerisque <a href="#">Read More</a>
-              </p>
-            </div>
-          </article>
-          <!-- End Blog Article -->
-          <!-- Blog article -->
-          <article>
-            <img src="images/blog03.png" alt="blog1" />
+                <source
+                  srcset="images/blog02-640.png"
+                  media="(min-width: 300px)"
+                />
 
-            <div class="text-block">
-              <a href="blog.html"><h4>Blog Entry 3</h4></a>
+                <img src="images/blog02.png" alt="Capricorn Mug" />
+              </picture>
 
-              <p>
-                Vivamus accumsan auctor placerat. Praesent nec nisi enim.
-                Suspendisse justo tellus, viverra consectetur libero sed,
-                scelerisque <a href="#">Read More</a>
-              </p>
-            </div>
-          </article>
-          <!-- End Blog Article -->
+              <div class="text-block">
+                <a href="blog.html"><h4>Let's talk about Capricorn</h4></a>
+
+                <p>
+                  Vivamus accumsan auctor placerat. Praesent nec nisi enim.
+                  Suspendisse justo tellus, viverra consectetur libero sed,
+                  scelerisque... <a href="blog.html">Read More</a>
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- end card -->
+          <!-- card  -->
+          <div class="col-xl-4 col-md-6 col-sm-12 mb-4">
+            <article>
+              <picture>
+                <source srcset="images/blog03.png" media="(min-width: 768px)" />
+
+                <source
+                  srcset="images/blog03-640.png"
+                  media="(min-width: 300px)"
+                />
+
+                <img src="images/blog03.png" alt="Virgo Mug" />
+              </picture>
+
+              <div class="text-block">
+                <a href="blog.html"><h4>Happy Virgo Season!</h4></a>
+
+                <p>
+                  Vivamus accumsan auctor placerat. Praesent nec nisi enim.
+                  Suspendisse justo tellus, viverra consectetur libero sed,
+                  scelerisque <a href="blog.html">Read More</a>
+                </p>
+              </div>
+            </article>
+          </div>
+          <!-- end card -->
         </div>
       </div>
-      <!-- End Blog -->
+
+      <!-- end bootstrap blog-->
+
       <!-- Contact form -->
       <section id="contact" class="contact-bg">
         <div class="container-contact">
@@ -221,9 +259,9 @@
               <label for="comment">Message</label>
               <textarea name="comment" id="comment"></textarea>
             </div>
-            <button class="mj-button border-0 align-self-end" type="submit">
-              Send
-            </button>
+            <div class="d-flex flex-row-reverse">
+              <button class="mj-button border-0" type="submit">Send</button>
+            </div>
           </form>
         </div>
       </section>
